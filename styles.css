@@ -1,0 +1,22 @@
+.hoverable-rect:hover {
+    /* fill: rgba(227, 57, 205, 0.536); */
+    fill: #0f2ce889;
+    cursor: move;
+}
+div{
+    position: relative;
+}
+.image-container {
+    overflow: hidden; /* Обрезает изображение, выходящее за границы контейнера */
+    position: relative; /* Для позиционирования изображения */
+    width: 100%; /* Ширина контейнера */
+    height: 500px; /* Высота контейнера */
+}
+
+#zoomable-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left; /* Точка отсчета трансформации */
+    cursor: grab; /* Стиль курсора для перемещения */
+}
